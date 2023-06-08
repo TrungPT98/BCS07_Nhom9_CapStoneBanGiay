@@ -112,6 +112,24 @@ header .container .container-fluid .navbar-collapse-2 .header__cart .header__car
 .navbar__content .navbar .navbar-collapse__2 .navbar-nav .nav-item:hover .nav-link {
   color: #fff;
 }
+.navbar__content .navbar .navbar-collapse__2 .navbar-nav .nav-item-btn {
+  line-height: 40px;
+  text-align: center;
+  width: 90px;
+  height: 40px;
+}
+.navbar__content .navbar .navbar-collapse__2 .navbar-nav .nav-item-btn a {
+  text-decoration: none;
+  background-color: #e75768;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.navbar__content .navbar .navbar-collapse__2 .navbar-nav .nav-item-btn a:hover {
+  background-color: white;
+  color: #e75768;
+}
 
 .product {
   margin-bottom: 40px;
