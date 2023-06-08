@@ -11,23 +11,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-    <!-- Google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
     <!-- FontAwesome 6.2.0 CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!-- (Optional) Use CSS or JS implementation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
-        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-        <!-- Main css  -->
+
+    <!-- owl carousel css -->
+    <link rel="stylesheet"
+        href="./controllers/owlCarosel/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="./controllers/owlCarosel/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <!-- Reset CSS  -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- Main css  -->
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -36,25 +32,651 @@
     <header>
         <!-- place navbar here -->
         <div class="container">
-            <h1>Hello</h1>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid align-items-center">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./../asset/img/sneaker-logo.jpg" alt="Sneaker">
+                    </a>
+                    <div class="col footer__content__listlapse navbar-collapse navbar-collapse-1"
+                        id="navbarSupportedContent">
+                        <div class="input-group mb-3">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>All Categories</option>
+                                <option value="1">For Men</option>
+                                <option value="2">For Woman</option>
+                                <option value="3">For Kid</option>
+                            </select>
+                            <input type="text" class="form-control " placeholder="Enter your search key..."
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <button class="btn" id="basic-addon2">Search</button>
+                        </div>
+                    </div>
 
+                    <div class="collapse navbar-collapse navbar-collapse-2" id="navbarSupportedContent">
+                        <div class="header__cart d-flex align-items-center ">
+                            <div class="header__cart__icon">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <span class="cart__icon__small">0</span>
+                            </div>
+                            <div class="header__cart__text">
+                                <p class="title">My Cart</p>
+                                <p class="sub__title">
+                                    $0.00
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
 
-    <section class="banner">
+    <main>
+        <!-- navbar -->
+        <section class="navbar__content">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse navbar-collapse__1 flex-grow-0" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item ps-0">
+                                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">FOR MEN</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">FOR WOMEN</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ">FOR KIDS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ">CATEGORIES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ">NEW ARRIVALS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ">LOOKBOOK</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse flex-grow-0 navbar-collapse__2 " id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled">
+                                        <i class="fa-brands fa-google-plus-g"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item-btn">
+                                    <a class="" href="./form/form.html">
+                                        Register
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
 
-    </section>
+        <!-- Banner  -->
+        <section class="banner">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./asset/img/banner_1.jpg" class="d-block w-100" alt="banner_1">
+                        <div class="banner__content">
+                            <p class="sub__title">BIG SALE UP TO 20% OFF</p>
+                            <h1>NIKE BLACK</h1>
+                            <p class="sub__title__2">History Month Collection 2018</p>
+                            <button>Shopping Now</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./asset/img/banner_2.jpg" class="d-block w-100" alt="banner_2">
+                        <div class="banner__content">
+                            <p class="sub__title">TRENDING PRODUCTS 2018</p>
+                            <h1>NEW LOOKBOOK</h1>
+                            <p class="sub__title__2">Sneaker Store | Clothing & Sport Equipment</p>
+                            <button>Shopping Now</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./asset/img/banner_3.jpg" class="d-block w-100" alt="banner_3">
+                        <div class="banner__content">
+                            <p class="sub__title">TOP JACKET OF SNEAKER</p>
+                            <h1>NEW JACKETS</h1>
+                            <p class="sub__title__2">Aurora Shell Jacket Is Ready For Any Adventure.</p>
+                            <button>Shopping Now</button>
+                        </div>
+                    </div>
+                </div>
 
-    <section class="news">
+            </div>
 
-    </section>
+        </section>
 
-    <section class="product">
+        <!-- NEWS  -->
+        <section class="news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="news__content">
+                            <a href="#">
+                                <img src="./asset/img/news_1.jpg" alt="news_1">
+                            </a>
+                            <a href="#">
+                                <img src="./asset/img/news_2.jpg" alt="news_2">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="news__content__mid">
+                            <a href="#">
+                                <img src="./asset/img/news_3.jpg" alt="news_3">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="news__content">
+                            <a href="#">
+                                <img src="./asset/img/news_4.jpg" alt="news_4">
+                            </a>
+                            <a href="#">
+                                <img src="./asset/img/news_5.jpg" alt="news_5">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pos title -->
+        <section class="pos__title">
+            <div class="container">
+                <h2>
+                    <span>
+                        Week Special Products
+                    </span>
+                </h2>
+                <p>Browse the collection of our special products.</p>
+            </div>
+        </section>
         
-    </section>
+        <section class="product__modal">
+            <div class="container">
+                <div class="product__modal__category">
+                    <div class="row" id="tbodyProduct">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Pos title -->
+        <section class="pos__title">
+            <div class="container">
+                <h2>
+                    <span>
+                        Bonus (No API)
+                    </span>
+                </h2>
+                <!-- <p>Browse the collection of our special products.</p> -->
+            </div>
+        </section>
+        <!-- Product modal -->
+        <section class="product__modal">
+            <div class="container">
+                <div class="product__modal__category owl-carousel">
+                    <!-- <div class="owl-carousel"> -->
+                        <div class="modal__category__content">
+                            <div class="modal__category__item">
+                                <div class="modal__item__img">
+                                    <img src="./asset/img/product_1.jpg" alt="" class="img__block">
+                                </div>
+                                <div class="modal__item__star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="modal__item__text">
+                                    <h3 class="title"><a href="#">NIKE LUNARCHARGEP</a></h3>
+                                    <p class="sub__title">
+                                        <a href="#">
+                                            Fashion Manufacturer
+                                        </a>
+                                    </p>
+                                    <div class="item__text__price d-flex">
+                                        <p class="title__1">$260.00</p>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between modal__item__cart">
+                                    <div class="item__cart_left">
+                                        <a href="./product/product.html">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            <span>
+                                                Add to cart
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="item__cart__right">
+                                        <i class="fa-solid fa-receipt"></i>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal__category__content">
+                            <div class="modal__category__item">
+                                <div class="modal__item__img">
+                                    <img src="./asset/img/product_2.jpg" alt="" class="img__block">
+                                </div>
+                                <div class="modal__item__star ">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="modal__item__text">
+                                    <h3 class="title"><a href="#">NIKE AIR ZOOM MARIAH</a></h3>
+                                    <p class="sub__title">
+                                        <a href="#">
+                                            Fashion Manufacturer
+                                        </a>
+                                    </p>
+                                    <div class="item__text__price d-flex">
+                                        <p class="title__1">$206.00</p>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between modal__item__cart">
+                                    <div class="item__cart_left">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <span>
+                                            Add to cart
+                                        </span>
+                                    </div>
+                                    <div class="item__cart__right">
+                                        <i class="fa-solid fa-receipt"></i>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal__category__content">
+                            <div class="modal__category__item">
+                                <div class="modal__item__img">
+                                    <img src="./asset/img/product_3.jpg" alt="" class="img__block">
+                                </div>
+                                <div class="modal__item__star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="modal__item__text">
+                                    <h3 class="title"><a href="#">NIKE AIR ZOOM MARIAH</a></h3>
+                                    <p class="sub__title">
+                                        <a href="#">
+                                            Fashion Manufacturer
+                                        </a>
+                                    </p>
+                                    <div class="item__text__price d-flex">
+                                        <p class="title__1">$209.00</p>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between modal__item__cart">
+                                    <div class="item__cart_left">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <span>
+                                            Add to cart
+                                        </span>
+                                    </div>
+                                    <div class="item__cart__right">
+                                        <i class="fa-solid fa-receipt"></i>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal__category__content">
+                            <div class="modal__category__item">
+                                <div class="modal__item__img">
+                                    <img src="./asset/img/product_4.jpg" alt="" class="img__block">
+                                </div>
+                                <div class="modal__item__star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="modal__item__text">
+                                    <h3 class="title"><a href="#">Nike Air Max Thea</a></h3>
+                                    <p class="sub__title">
+                                        <a href="#">
+                                            Fashion Manufacturer
+                                        </a>
+                                    </p>
+                                    <div class="item__text__price d-flex">
+                                        <p class="title__1">$250.00</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between modal__item__cart">
+                                    <div class="item__cart_left">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <span>
+                                            Add to cart
+                                        </span>
+                                    </div>
+                                    <div class="item__cart__right">
+                                        <i class="fa-solid fa-receipt"></i>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal__category__content">
+                            <div class="modal__category__item">
+                                <div class="modal__item__img">
+                                    <img src="./asset/img/product_5.jpg" alt="" class="img__block">
+                                </div>
+                                <div class="modal__item__star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="modal__item__text">
+                                    <h3 class="title"><a href="#">NIKE REACT HYPERDUNK FLYKNIT</a></h3>
+                                    <p class="sub__title">
+                                        <a href="#">
+                                            Fashion Manufacturer
+                                        </a>
+                                    </p>
+                                    <div class="item__text__price d-flex">
+                                        <p class="title__1">$210.00</p>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between modal__item__cart">
+                                    <div class="item__cart_left">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <span>
+                                            Add to cart
+                                        </span>
+                                    </div>
+                                    <div class="item__cart__right">
+                                        <i class="fa-solid fa-receipt"></i>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal__category__content">
+                            <div class="modal__category__item">
+                                <div class="modal__item__img">
+                                    <img src="./asset/img/product_6.jpg" alt="" class="img__block">
+                                </div>
+                                <div class="modal__item__star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="modal__item__text">
+                                    <h3 class="title"><a href="#">NIKE AIR ZOOM MARIAH</a></h3>
+                                    <p class="sub__title">
+                                        <a href="#">
+                                            Fashion Manufacturer
+                                        </a>
+                                    </p>
+                                    <div class="item__text__price d-flex">
+                                        <p class="title__1">$209.00</p>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between modal__item__cart">
+                                    <div class="item__cart_left">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <span>
+                                            Add to cart
+                                        </span>
+                                    </div>
+                                    <div class="item__cart__right">
+                                        <i class="fa-solid fa-receipt"></i>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <!-- </div> -->
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <footer>
         <!-- place footer here -->
+        <div class="footer__content">
+            <div class="container">
+                <div class="row footer__item">
+                    <div class="col-4 footer__contact">
+                        <div class="footer__logo">
+                            <img src="./asset/img/logo_footer.png" alt="" class="img__block">
+                        </div>
+                        <div class="footer__phone">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>+ (012) 800 456 789</span>
+                        </div>
+                        <p class="sub__title">
+                            We are a team of designers and developers that create high quality Magento, Prestashop,
+                            Opencart
+                        </p>
+
+                        <div class="footer__icon">
+                            <i style="background-color: #3c5b9b;" class="fa-brands fa-facebook-f"></i>
+                            <i style="background-color: #1aaed9;" class="fa-brands fa-twitter"></i>
+                            <i style="background-color: #d82114;" class="fa-brands fa-youtube"></i>
+                            <i style="background-color: #eb3e32;" class="fa-brands fa-google-plus-g"></i>
+                            <i style="background-color: #8a7763" class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="col-8 footer__menu">
+                        <div class="row">
+                            <div class="col-2 footer__content__list ">
+                                <h3 class="title">
+                                    PRODUCTS
+                                </h3>
+                                <ul class="footer__list">
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Prices Drop
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            New Products
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Best Sales
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Stores
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Login
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Login
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-2 footer__content__list">
+                                <h3 class="title">
+                                    OUR COMPANY
+                                </h3>
+                                <ul class="footer__list">
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Delivery
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Legal Notice
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            About Us
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Contact Us
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Sitemap
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Stores
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-3 footer__content__list">
+                                <h3 class="title">
+                                    YOUR ACCOUNT
+                                </h3>
+                                <ul class="footer__list">
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Addresses
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Credit Slips
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Orders
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Personal Info
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Login
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-5 footer__content__list">
+                                <h3 class="title">
+                                    GET IN TOUCH
+                                </h3>
+                                <p class="sub__title">
+                                    Sneaker - Responsive Prestashop Theme
+                                    123 Main Street, Anytown, CA 12345 - USA.
+                                    United States
+                                    Call us: (012) 800 456 789-987
+                                    Email us: demo@posthemes.com
+                                </p>
+                                <h3 class="title__2">
+                                    OPENING TIME
+                                </h3>
+                                <p class="sub__title__2">
+                                    Open:<span> 8:00 AM </span>- close: <span> 18:00 PM </span> Saturday - Sunday: Close
+                                </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="footer__bottom__content d-flex justify-content-between align-items-center">
+                        <div class="footer__left">
+                            <p class="title">
+                                Copyright <span>Posthemes</span>. All Rights Reserved
+
+                            </p>
+                        </div>
+                        <div class="footer__right">
+                            <div class="footer__bottom__img">
+                                <img src="./asset/img/payment__Footer.png" alt="Payment" class="img__block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__social"></div>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -64,6 +686,41 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
         </script>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- owl carousel JS -->
+    <script src="./controllers/owlCarosel/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            // loop: true,
+            margin: 10,
+            // nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+
+    </script>
+
+    <!-- Axios  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+        integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./models/Product.js"></script>
+    <script src="./controllers/index.js"></script>
+
 </body>
 
 </html>
