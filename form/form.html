@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- reset css -->
+    <link rel="stylesheet" href="./../css/reset.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./../css/form.css">
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid align-items-center">
+                    <a class="navbar-brand" href="#">
+                        <img src="./../asset/img/sneaker-logo.jpg" alt="Sneaker">
+                    </a>
+                    <div class="col footer__content__listlapse navbar-collapse navbar-collapse-1"
+                        id="navbarSupportedContent">
+                        <div class="input-group mb-3">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>All Categories</option>
+                                <option value="1">For Men</option>
+                                <option value="2">For Woman</option>
+                                <option value="3">For Kid</option>
+                            </select>
+                            <input type="text" class="form-control " placeholder="Enter your search key..."
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <button class="btn" id="basic-addon2">Search</button>
+                        </div>
+                    </div>
+
+                    <div class="collapse navbar-collapse navbar-collapse-2" id="navbarSupportedContent">
+                        <div class="header__cart d-flex align-items-center ">
+                            <div class="header__cart__icon">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <span class="cart__icon__small">0</span>
+                            </div>
+                            <div class="header__cart__text">
+                                <p class="title">My Cart</p>
+                                <p class="sub__title">
+                                    $0.00
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- navbar -->
+        <section class="navbar__content">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse navbar-collapse__1 flex-grow-0" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item ps-0">
+                                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">FOR MEN</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">FOR WOMEN</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ">FOR KIDS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ">CATEGORIES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ">NEW ARRIVALS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ">LOOKBOOK</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse flex-grow-0 navbar-collapse__2 " id="navbarNav">
+                            <h3 class="title">
+                                FOLLOW US:
+                            </h3>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled">
+                                        <i class="fa-brands fa-google-plus-g"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Form -->
+        <form action="">
+            <div class="container">
+                <h2 class="text-center fs-2">Register</h2>
+                <div class="row">
+                    <div class="col-6 form__left">
+                        <div class="form__left__content">
+                            <!-- email -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <!-- password -->
+                            <div class="mb-3">
+                                <label for="password" class="form-label"> Password</label>
+                                <input type="password" class="form-control" id="password">
+                            </div>
+                            <!-- password confirm -->
+                            <div class="mb-3">
+                                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirmPassword">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 form__right">
+                        <div class="form__right__content">
+                            <!-- email -->
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <!-- password -->
+                            <div class="mb-4">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="password" class="form-control" id="phone">
+                            </div>
+                            <!-- check gender -->
+                           <div style="margin-top: 32px;" class="form__check__gender">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label style="margin-top: 4px;" class="form-check-label" for="flexRadioDefault1">
+                                  Male
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label style="margin-top: 4px;" class="form-check-label" for="flexRadioDefault2">
+                                  Female
+                                </label>
+                              </div>
+                           </div>
+                            
+                    </div>
+                </div>
+            </div>
+          
+        </form>
+    </main>
+    <footer>
+        <!-- place footer here -->
+        <div class="footer__content">
+            <div class="container">
+                <div class="row footer__item">
+                    <div class="col-4 footer__contact">
+                        <div class="footer__logo">
+                            <img src="./asset/image/logo_footer.png" alt="" class="img__block">
+                        </div>
+                        <div class="footer__phone">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>+ (012) 800 456 789</span>
+                        </div>
+                        <p class="sub__title">
+                            We are a team of designers and developers that create high quality Magento, Prestashop,
+                            Opencart
+                        </p>
+
+                        <div class="footer__icon">
+                            <i style="background-color: #3c5b9b;" class="fa-brands fa-facebook-f"></i>
+                            <i style="background-color: #1aaed9;" class="fa-brands fa-twitter"></i>
+                            <i style="background-color: #d82114;" class="fa-brands fa-youtube"></i>
+                            <i style="background-color: #eb3e32;" class="fa-brands fa-google-plus-g"></i>
+                            <i style="background-color: #8a7763" class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="col-8 footer__menu">
+                        <div class="row">
+                            <div class="col-2 footer__content__list ">
+                                <h3 class="title">
+                                    PRODUCTS
+                                </h3>
+                                <ul class="footer__list">
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Prices Drop
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            New Products
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Best Sales
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Stores
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Login
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Login
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-2 footer__content__list">
+                                <h3 class="title">
+                                    OUR COMPANY
+                                </h3>
+                                <ul class="footer__list">
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Delivery
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Legal Notice
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            About Us
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Contact Us
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Sitemap
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Stores
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-3 footer__content__list">
+                                <h3 class="title">
+                                    YOUR ACCOUNT
+                                </h3>
+                                <ul class="footer__list">
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Addresses
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Credit Slips
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Orders
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Personal Info
+                                        </a>
+                                    </li>
+                                    <li class="footer__list__item">
+                                        <a href="#" class="footer__link">
+                                            Login
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-5 footer__content__list">
+                                <h3 class="title">
+                                    GET IN TOUCH
+                                </h3>
+                                <p class="sub__title">
+                                    Sneaker - Responsive Prestashop Theme
+                                    123 Main Street, Anytown, CA 12345 - USA.
+                                    United States
+                                    Call us: (012) 800 456 789-987
+                                    Email us: demo@posthemes.com
+                                </p>
+                                <h3 class="title__2">
+                                    OPENING TIME
+                                </h3>
+                                <p class="sub__title__2">
+                                    Open:<span> 8:00 AM </span>- close: <span> 18:00 PM </span> Saturday - Sunday: Close
+                                </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="footer__bottom__content d-flex justify-content-between align-items-center">
+                        <div class="footer__left">
+                            <p class="title">
+                                Copyright <span>Posthemes</span>. All Rights Reserved
+
+                            </p>
+                        </div>
+                        <div class="footer__right">
+                            <div class="footer__bottom__img">
+                                <img src="./../asset/img/payment__Footer.png" alt="Payment" class="img__block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__social"></div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
