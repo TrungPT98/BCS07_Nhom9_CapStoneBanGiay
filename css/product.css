@@ -63,6 +63,29 @@ header .container .container-fluid .navbar-collapse-2 .header__cart .header__car
   margin-top: 5px;
 }
 
+@media screen and (max-width: 1193px) {
+  header .container .container-fluid .navbar-collapse .input-group input {
+    width: 280px !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header .container .container-fluid .navbar-collapse .input-group input {
+    width: 280px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .container .container-fluid .navbar-collapse .input-group input {
+    width: 180px !important;
+  }
+}
+@media screen and (max-width: 750px) {
+  header .container {
+    max-width: 500px;
+  }
+  header .container .container-fluid .navbar-collapse .input-group input {
+    width: 180px !important;
+  }
+}
 .navbar__content {
   background-color: #2f333a;
   margin-bottom: 35px;
