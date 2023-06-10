@@ -55,7 +55,7 @@ a{
     box-sizing: border-box;
 }
 .container{
-    max-width: 1319px;
+    /* max-width: 1319px; */
 }
 .container-fluid{
     padding: 0;
