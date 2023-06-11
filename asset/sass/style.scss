@@ -247,15 +247,6 @@ html {
                 position: relative;
             }
 
-            &::before {
-                content: "";
-                background-color: #ebebeb;
-                height: 1px;
-                width: 100%;
-                position: absolute;
-                left: 0px;
-                top: 56%;
-            }
         }
         p {
             text-align: center;

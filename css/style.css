@@ -236,15 +236,6 @@ header .container .container-fluid .navbar-collapse-2 .header__cart .header__car
   display: inline-block;
   position: relative;
 }
-.pos__title .container h2::before {
-  content: "";
-  background-color: #ebebeb;
-  height: 1px;
-  width: 100%;
-  position: absolute;
-  left: 0px;
-  top: 56%;
-}
 .pos__title .container p {
   text-align: center;
   padding: 20px 0;

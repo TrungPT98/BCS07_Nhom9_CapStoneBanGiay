@@ -4,6 +4,14 @@
 // Header begin
 header {
     .container {
+      .register{
+        a{
+          color: $color-secondary;
+          &:hover{
+            text-decoration: underline;  
+          }
+        }
+      }
       .container-fluid {
         padding: 35px 0 15px;
         .navbar-brand {
