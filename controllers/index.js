@@ -23,7 +23,7 @@ function renderProduct(arr) {
         Object.assign(product, productSever);
         console.log(product);
         content += `
-        <div class="modal__category__content">
+        <div class="modal__category__content col col-lg-3 col-md-4 col-sm-6">
             <div class="modal__category__item">
                 <div class="modal__item__img">
                     <img src="${product.image}" alt="" class="img__block">

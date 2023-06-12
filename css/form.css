@@ -233,6 +233,7 @@ footer .footer__content .footer__bottom .container .footer__bottom__content .foo
 footer .footer__content .footer__bottom .container .footer__bottom__content .footer__left p.title span:hover {
   text-decoration: underline;
 }
+
 /* RESPONSIVE */
 @media screen and (max-width: 1193px) {
   .navbar__content .navbar .navbar-collapse__1 .navbar-nav .nav-item {

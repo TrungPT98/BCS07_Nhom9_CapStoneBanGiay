@@ -36,7 +36,7 @@ function renderProductID(arr) {
         Object.assign(productRelated, product.relatedProducts[i]);
         console.log(productRelated);
         contentRelated += `
-        <div class="modal__category__content">
+        <div class="modal__category__content col col-lg-3 col-md-4 col-sm-6">
             <div class="modal__category__item">
                 <div class="modal__item__img">
                     <img src="${productRelated.image}" alt="" class="img__block">
