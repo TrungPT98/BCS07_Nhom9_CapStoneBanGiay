@@ -3,82 +3,200 @@
 
 // Header begin
 header {
-    .container {
-      .container-fluid {
-        padding: 35px 0 15px;
-        .navbar-brand {
+  .container {
+    .register{
+      a{
+        color: $color-secondary;
+        &:hover{
+          text-decoration: underline;  
         }
-        .navbar-collapse {
-          flex-grow: 0;
-          .input-group {
-            .form-select {
-              width: 170px;
-              height: 50px;
-              line-height: 50px;
-              padding: 0 25px;
-              text-transform: capitalize;
-              border-right: 1px solid #ebebeb;
-              background-color: #f4f4f4;
-            }
-            input {
-              font-size: 13px;
-              background-color: #fff;
-              border: 2px solid #ebebeb;
-              color: #a9a9a9;
-              height: 50px;
-              width: 450px;
-              padding: 0 60px 0 20px;
-              outline: none;
-            }
-            button {
-              opacity: 1;
-              color: #fff;
-              background-color: $color-secondary;
-              font-size: 18px;
-              font-weight: 500;
-              padding: 0 35px;
-              transition: all 0.5s;
-              &:hover {
-                background-color: #000;
-              }
+      }
+    }
+    .container-fluid {
+      padding: 35px 0 15px;
+      // .navbar-brand {
+      // }
+      .navbar-collapse {
+        flex-grow: 0;
+        .input-group {
+          .form-select {
+            width: 170px;
+            height: 50px;
+            line-height: 50px;
+            padding: 0 25px;
+            text-transform: capitalize;
+            border-right: 1px solid #ebebeb;
+            background-color: #f4f4f4;
+          }
+          input {
+            font-size: 13px;
+            background-color: #fff;
+            border: 2px solid #ebebeb;
+            color: #a9a9a9;
+            height: 50px;
+            width: 450px;
+            padding: 0 60px 0 20px;
+            outline: none;
+          }
+          button {
+            opacity: 1;
+            color: #fff;
+            background-color: $color-secondary;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 0 35px;
+            transition: all 0.5s;
+            &:hover {
+              background-color: #000;
             }
           }
         }
-        .navbar-collapse-1 {
-        }
-        .navbar-collapse-2 {
-          .header__cart {
-            .header__cart__icon {
-              position: relative;
-              i {
-                font-size: 36px;
-                margin-right: 16px;
-              }
-              .cart__icon__small {
-                top: 0px;
-                left: 19px;
-                position: absolute;
-                width: 23px;
-                height: 23px;
-                border-radius: 50%;
-                color: #fff;
-                background-color: $color-secondary;
-                text-align: center;
-                line-height: 23px;
-              }
+      }
+      // .navbar-collapse-1 {
+      // }
+      .navbar-collapse-2 {
+        .header__cart {
+          .header__cart__icon {
+            position: relative;
+            i {
+              font-size: 36px;
+              margin-right: 16px;
             }
-            .header__cart__text {
-              p.title {
-              }
-              p.sub__title {
-                color: $color-secondary;
-                margin-top: 5px;
-              }
+            .cart__icon__small {
+              top: 0px;
+              left: 19px;
+              position: absolute;
+              width: 23px;
+              height: 23px;
+              border-radius: 50%;
+              color: #fff;
+              background-color: $color-secondary;
+              text-align: center;
+              line-height: 23px;
+            }
+          }
+          .header__cart__text {
+            // p.title {
+            // }
+            p.sub__title {
+              color: $color-secondary;
+              margin-top: 5px;
             }
           }
         }
       }
     }
   }
-  // Header end
+}
+// Header end
+
+
+ // responsive
+ @media screen and (max-width: 1193px) {
+  header{
+    .container {
+   .container-fluid {
+    //  .navbar-brand {
+    //  }
+     .navbar-collapse {
+       .input-group {
+        //  .form-select {
+          
+        //  }
+         input {
+          width: 280px!important;
+         }
+        //  button {
+         
+        //  }
+       }
+     }
+
+   }
+ }
+}
+ }
+ 
+ @media screen   and (max-width: 1090px) {
+   
+ }
+ @media screen and (max-width: 1000px) {
+   header{
+     .container {
+    .container-fluid {
+      // .navbar-brand {
+      // }
+      .navbar-collapse {
+        .input-group {
+          // .form-select {
+           
+          // }
+          input {
+           width: 280px!important;
+          }
+          // button {
+          
+          // }
+        }
+      }
+
+    }
+  }
+}
+ }
+ @media screen and (max-width: 992px) {
+   header{
+     .container {
+       .container-fluid {
+        //  .navbar-brand {
+        //  }
+         .navbar-collapse {
+           .input-group {
+            //  .form-select {
+              
+            //  }
+             input {
+              width: 180px!important;
+             }
+            //  button {
+             
+            //  }
+           }
+         }
+
+       }
+     }
+   }
+ }
+ @media screen and (max-width: 800px) {
+ }
+ @media screen and (max-width: 750px) {
+   header{
+     .container {
+       max-width: 500px;
+       .container-fluid {
+        //  .navbar-brand {
+        //  }
+         .navbar-collapse {
+           .input-group {
+            //  .form-select {
+              
+            //  }
+             input {
+              width: 180px!important;
+             }
+            //  button {
+             
+            //  }
+           }
+         }
+
+       }
+     }
+   }
+ }
+ @media screen and (max-width: 600px) {
+ }
+ @media screen and (max-width: 510px) {
+ }
   

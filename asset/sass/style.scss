@@ -22,7 +22,7 @@ html {
                     padding: 0 13px;
 
                     .nav-link {
-                        font-size: 14px;
+                        font-size: 12px;
                         text-transform: uppercase;
                         color: #fff;
                         font-weight: 500;
@@ -37,7 +37,7 @@ html {
         }
 
         .navbar-collapse__2 {
-            padding-right: 60px;
+            // padding-right: 60px;
 
             h3.title {
                 color: #56595e;
@@ -45,12 +45,12 @@ html {
             }
 
             .navbar-nav {
-                // margin-left: 15px;
+                margin-left: 15px;
 
                 .nav-item {
-                    width: 40px;
-                    height: 40px;
-                    line-height: 40px;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
                     text-align: center;
                     border-radius: 50%;
                     margin-right: 8px;
@@ -71,11 +71,13 @@ html {
                         color: #fff;
                     }
                 }
+
                 .nav-item-btn {
                     line-height: 40px;
                     text-align: center;
                     width: 90px;
                     height: 40px;
+
                     a {
                         text-decoration: none;
                         background-color: $color-secondary;
@@ -83,6 +85,7 @@ html {
                         padding: 10px 15px;
                         border-radius: 10px;
                         transition: all .5s;
+
                         &:hover {
                             background-color: white;
                             color: $color-secondary;
@@ -122,26 +125,31 @@ html {
 
         .carousel-inner {
             height: 75vh;
+
             @media screen and (max-width: 1450px) {
                 & {
                     height: 60vh;
                 }
             }
+
             @media screen and (max-width: 1200px) {
                 & {
                     height: 50vh;
                 }
             }
+
             @media screen and (max-width: 992px) {
                 & {
                     height: 40vh;
                 }
             }
+
             @media screen and (max-width: 720px) {
                 & {
                     height: 30vh;
                 }
             }
+
             @media screen and (max-width: 540px) {
                 & {
                     height: 20vh;
@@ -162,7 +170,7 @@ html {
                     left: 32%;
                     transform: translate(-50%, -50%);
                     color: $color-text;
-                    
+
                     .sub__title {
                         font-size: 18px;
                         line-height: 1;
@@ -194,6 +202,7 @@ html {
                             border: 2px solid $color-secondary;
                         }
                     }
+
                     @media screen and (max-width: 1300px) {
                         & {
                             .sub__title {
@@ -201,27 +210,27 @@ html {
                                 line-height: 1;
                                 font-weight: 500;
                             }
-        
+
                             h1 {
                                 font-size: 70px;
                                 margin-bottom: 50px;
                                 line-height: 1;
                                 font-weight: 300;
                             }
-        
+
                             .sub__title__2 {
                                 font-size: 18px;
                                 line-height: 1;
                                 font-weight: 500;
                                 margin-bottom: 50px;
                             }
-        
+
                             button {
                                 padding: 20px 44px;
                                 border-radius: 5px;
                                 background-color: transparent;
                                 transition: all .5s;
-        
+
                                 &:hover {
                                     color: $color-secondary;
                                     border: 2px solid $color-secondary;
@@ -229,6 +238,7 @@ html {
                             }
                         }
                     }
+
                     @media screen and (max-width: 992px) {
                         & {
                             .sub__title {
@@ -236,27 +246,27 @@ html {
                                 line-height: 1;
                                 font-weight: 500;
                             }
-        
+
                             h1 {
                                 font-size: 60px;
                                 margin-bottom: 40px;
                                 line-height: 1;
                                 font-weight: 300;
                             }
-        
+
                             .sub__title__2 {
                                 font-size: 18px;
                                 line-height: 1;
                                 font-weight: 500;
                                 margin-bottom: 50px;
                             }
-        
+
                             button {
                                 padding: 20px 44px;
                                 border-radius: 5px;
                                 background-color: transparent;
                                 transition: all .5s;
-        
+
                                 &:hover {
                                     color: $color-secondary;
                                     border: 2px solid $color-secondary;
@@ -264,6 +274,7 @@ html {
                             }
                         }
                     }
+
                     @media screen and (max-width: 720px) {
                         & {
                             .sub__title {
@@ -271,27 +282,27 @@ html {
                                 line-height: 1;
                                 font-weight: 500;
                             }
-        
+
                             h1 {
                                 font-size: 40px;
                                 margin-bottom: 30px;
                                 line-height: 1;
                                 font-weight: 300;
                             }
-        
+
                             .sub__title__2 {
                                 font-size: 14px;
                                 line-height: 1;
                                 font-weight: 500;
                                 margin-bottom: 50px;
                             }
-        
+
                             button {
                                 padding: 15px 30px;
                                 border-radius: 5px;
                                 background-color: transparent;
                                 transition: all .5s;
-        
+
                                 &:hover {
                                     color: $color-secondary;
                                     border: 2px solid $color-secondary;
@@ -299,6 +310,7 @@ html {
                             }
                         }
                     }
+
                     @media screen and (max-width: 540px) {
                         & {
                             .sub__title {
@@ -306,28 +318,28 @@ html {
                                 line-height: 1;
                                 font-weight: 500;
                             }
-        
+
                             h1 {
                                 font-size: 20px;
                                 margin-bottom: 10px;
                                 line-height: 1;
                                 font-weight: 300;
                             }
-        
+
                             .sub__title__2 {
                                 font-size: 12px;
                                 line-height: 1;
                                 font-weight: 500;
                                 margin-bottom: 40px;
                             }
-        
+
                             button {
                                 padding: 10px 20px;
                                 border-radius: 5px;
                                 background-color: transparent;
                                 transition: all .5s;
                                 font-size: 12px;
-        
+
                                 &:hover {
                                     color: $color-secondary;
                                     border: 2px solid $color-secondary;
@@ -397,6 +409,7 @@ html {
 .pos__title {
     padding: 40px 0 30px;
     position: relative;
+
     .container {
         h2 {
             //   text-transform: capitalize;
@@ -406,6 +419,7 @@ html {
             color: $color-text;
             line-height: 25px;
             font-size: 24px;
+
             span {
                 background-color: #fff;
                 padding: 0 30px;
@@ -413,16 +427,8 @@ html {
                 position: relative;
             }
 
-            &::before {
-                content: "";
-                background-color: #ebebeb;
-                height: 1px;
-                width: 100%;
-                position: absolute;
-                left: 0px;
-                top: 56%;
-            }
         }
+
         p {
             text-align: center;
             padding: 20px 0;
@@ -441,22 +447,26 @@ html {
         .product__modal__category {
             .col {
                 width: calc(100% / 5);
+
                 @media screen and (max-width: 1200px) {
                     & {
                         width: calc(100% / 4);
                     }
                 }
+
                 @media screen and (max-width: 992px) {
                     & {
                         width: calc(100% / 3);
                     }
                 }
+
                 @media screen and (max-width: 720px) {
                     & {
                         width: calc(100% / 2);
                     }
                 }
             }
+
             .modal__category__content {
                 // width: 20%;
 
@@ -604,7 +614,7 @@ footer {
 
                 .footer__contact {
                     // .footer__logo {
-                    //     .img__block {}
+                    //   .img__block {}
                     // }
 
                     .footer__phone {
@@ -724,13 +734,220 @@ footer {
                         }
                     }
 
-                    // .footer__right {
-                    //     .footer__bottom__img {
-                    //         .img__block {}
-                    //     }
-                    // }
                 }
             }
         }
     }
+}
+
+// footer end
+
+// responsive
+@media screen and (max-width: 1193px) {
+    .navbar__content {
+        background-color: #2f333a;
+        margin-bottom: 35px;
+        padding: 3px 0;
+
+        .navbar {
+            // .navbar-collapse {}
+
+            .navbar-collapse__1 {
+                .navbar-nav {
+                    .nav-item {
+                        padding: 0 11px;
+
+                        .nav-link {
+                            font-size: 12px;
+                            text-transform: uppercase;
+                            color: #fff;
+                            font-weight: 500;
+                            transition: all 0.5s;
+
+                            &:hover {
+                                color: $color-secondary;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .navbar-collapse__2 {
+
+                // padding-right: 60px;
+                h3.title {
+                    color: #56595e;
+                    font-size: 14px;
+                }
+
+                .navbar-nav {
+                    margin-left: 15px;
+
+                    .nav-item {
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                        text-align: center;
+                        border-radius: 50%;
+                        margin-right: 8px;
+                        background-color: #373b41;
+                        transition: all 0.5s;
+                        cursor: pointer;
+
+                        .nav-link {
+                            color: #56595e;
+                            transition: all 0.5s;
+                        }
+
+                        &:hover {
+                            background-color: $color-secondary;
+                        }
+
+                        &:hover .nav-link {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1090px) {}
+
+@media screen and (max-width: 1000px) {
+    .navbar__content {
+        display: none;
+        background-color: #2f333a;
+        margin-bottom: 35px;
+        padding: 3px 0;
+
+        .navbar {
+            // .navbar-collapse {}
+
+            .navbar-collapse__1 {
+                .navbar-nav {
+                    .nav-item {
+                        padding: 0 13px;
+
+                        .nav-link {
+                            font-size: 14px;
+                            text-transform: uppercase;
+                            color: #fff;
+                            font-weight: 500;
+                            transition: all 0.5s;
+
+                            &:hover {
+                                color: $color-secondary;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .navbar-collapse__2 {
+                padding-right: 60px;
+
+                h3.title {
+                    color: #56595e;
+                    font-size: 14px;
+                }
+
+                .navbar-nav {
+                    margin-left: 15px;
+
+                    .nav-item {
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        border-radius: 50%;
+                        margin-right: 8px;
+                        background-color: #373b41;
+                        transition: all 0.5s;
+                        cursor: pointer;
+
+                        .nav-link {
+                            color: #56595e;
+                            transition: all 0.5s;
+                        }
+
+                        &:hover {
+                            background-color: $color-secondary;
+                        }
+
+                        &:hover .nav-link {
+                            color: #fff;
+                        }
+                    }
+
+                    .nav-item-btn {
+                        line-height: 40px;
+                        text-align: center;
+                        width: 90px;
+                        height: 40px;
+
+                        a {
+                            text-decoration: none;
+                            background-color: $color-secondary;
+                            color: white;
+                            padding: 10px 15px;
+                            border-radius: 10px;
+                            transition: all .5s;
+
+                            &:hover {
+                                background-color: white;
+                                color: $color-secondary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 750px) {}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 510px) {
+    .tab {
+        padding: 40px 0;
+
+        .container {
+            .tab__content {
+                background-color: #f6f6f6;
+                padding: 40px 0;
+                text-align: center;
+
+                .tab__nav__item {
+                    padding: 0 25px;
+                    display: inline-block;
+
+                    .tab__nav__link {
+                        line-height: 25px;
+                        color: #c9c9c9;
+                        font-weight: 500;
+                        font-size: 18px;
+                        text-transform: capitalize;
+                        transition: all 0.5s;
+                    }
+
+                    &.active .tab__nav__link {
+                        color: #2f333a;
+                    }
+
+                    &:hover .tab__nav__link {
+                        color: #2f333a;
+                    }
+                }
+            }
+        }
+    }
+
 }

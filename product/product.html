@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Sneaker_Products</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,12 +15,12 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- owl carousel css -->
-    <link rel="stylesheet" href="./../controllers/owlCarosel/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="./../controllers/owlCarosel/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../controllers/owlCarosel/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../controllers/owlCarosel/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <!-- Reset css -->
-    <link rel="stylesheet" href="./../css/reset.css">
+    <link rel="stylesheet" href="../css/reset.css">
     <!-- main css -->
-    <link rel="stylesheet" href="./../css/product.css">
+    <link rel="stylesheet" href="../css/product.css">
 
 </head>
 
@@ -28,10 +28,16 @@
     <header>
         <!-- place navbar here -->
         <div class="container">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="register float-end mt-2 ">
+                <a  href="../form/form.html">
+                    Register
+                </a>
+            </div>
+            <div class="clear"></div>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary d-block">
                 <div class="container-fluid align-items-center">
                     <a class="navbar-brand" href="../index.html">
-                        <img src="./../asset/img/sneaker-logo.jpg" alt="Sneaker">
+                        <img src="../asset/img/sneaker-logo.jpg" alt="Sneaker">
                     </a>
                     <div class="col footer__content__listlapse navbar-collapse navbar-collapse-1"
                         id="navbarSupportedContent">
@@ -130,11 +136,7 @@
                                         <i class="fa-brands fa-instagram"></i>
                                     </a>
                                 </li>
-                                <li class="nav-item-btn">
-                                    <a class="" href="../form/form.html">
-                                        Register
-                                    </a>
-                                </li>
+                               
                             </ul>
                         </div>
                     </div>
@@ -142,135 +144,7 @@
             </div>
         </section>
         <!-- product -->
-        <div id="tbodyProductId"></div>
-
-        <!-- <section class="product">
-            <div class="container">
-                <div class="product__text">
-                    <a class="product__text__link-1" href="">
-                        <span>Home
-                        </span>
-                    </a>
-                    <i class="fa-solid fa-angle-right"></i>
-
-                    <a class="product__text__link-2" href="">
-                        <span>
-                            NIKE FREE RN 2018</span>
-                    </a>
-                </div>
-                <div class="product__content">
-                    <div class="row">
-                        <div class="col-5 product__item__left">
-                            <div class="product__item__img">
-                                <img src="./../asset/img/product_3.jpg" alt="
-                                NIKE FREE RN 2018" class="img__block">
-                            </div>
-                            <div class="item__left__details">
-                                <div class="row owl-carousel d-block">
-                                    <div class="col item__img">
-                                        <img src="./../asset/img/product__details.jpg" alt="
-                                        NIKE FREE RN 2018"
-                                            class="img__block">
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-7 product__item__right">
-                            <h3 class="title">
-                                NIKE FREE RN 2018
-                            </h3>
-                            <p class="sub__title">
-                                Reference: demo_11
-                            </p>
-                            <div class="item__review d-flex">
-                                <div class="item__review__star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <span>
-                                    <i class="fa-regular fa-comment"></i>
-                                    Read review(2)</span>
-                                <span>
-                                    <i class="fa-solid fa-pen"></i>
-                                    Write a review
-                                </span>
-                            </div>
-                            <div class="item__sale d-flex align-items-center">
-                                <p class="sub__title__2">
-                                    $230.00
-                                </p>
-                                <p class="sub_title__save">
-                                    SAVE 10%
-                                </p>
-                            </div>
-                            <p class="sub__title__2">
-                                100% cotton double printed dress. Black and white striped top and orange high waisted
-                                skater skirt bottom.
-                            </p>
-                            <p class="title__size">Size</p>
-                            <select name="" id="">
-                                <option value="0">S</option>
-                                <option value="1">M</option>
-                                <option value="2">L</option>
-                            </select>
-                            <p class="title__color">
-                                Color
-                            </p>
-                            <div class="color"></div>
-                            <p class="title__quantity">
-                                Quantity
-                            </p>
-                            <div class="product__quantity d-flex">
-                                <div class="input__quantity">
-                                    <input value="1" type="text" min="1" class=" d-block input-group form-control">
-                                    <span class="input-group d-flex flex-column">
-                                        <button class="btn">
-                                            <i class="fa-solid fa-chevron-up"></i>
-                                        </button>
-                                        <button class="btn">
-                                            <i class="fa-solid fa-angle-down"></i>
-                                        </button>
-                                    </span>
-                                </div>
-                                <button class="btn product__btn">
-                                    ADD TO CART
-                                </button>
-                            </div>
-                            <p class="title__stock">
-                                <i class="fa-solid fa-check"></i>
-                                In Stock
-                            </p>
-                            <div class="product__social">
-                                <span>Share</span>
-                                <i class="fa-brands fa-facebook-f"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-google-plus-g"></i>
-                                <i class="fa-brands fa-pinterest"></i>
-                            </div>
-                            <div class="product__service">
-                                <p>
-                                    <i class="fa-solid fa-shield-heart"></i>
-                                    Security Policy (Edit With Customer Reassurance Module)
-                                </p>
-                                <p>
-                                    <i class="fa-solid fa-truck"></i>
-                                    Delivery Policy (Edit With Customer Reassurance Module)
-                                </p>
-                                <p>
-                                    <i class="fa-solid fa-right-left"></i>
-                                    Return Policy (Edit With Customer Reassurance Module)
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
+        <div id="tbodyProductId"></div>    
         
         <!-- Tab -->
         <section class="tab">
@@ -299,7 +173,7 @@
             <div class="container">
                 <h2>
                     <span>
-                        12 Other Products In The Same Category:
+                        Other Products In The Same Category:
                     </span>
                 </h2>
             </div>
@@ -314,212 +188,14 @@
                 </div>
             </div>
         </section>
-        <!-- Product modal -->
-        <!-- <section class="product__modal">
-            <div class="container">
-                <div class="product__modal__category">
-                    <div class="row">
-                        <div class="col modal__category__content">
-                            <div class="modal__category__item">
-                                <div class="modal__item__img">
-                                    <img src="./../asset/img/product_1.jpg" alt="" class="img__block">
-                                </div>
-                                <div class="modal__item__star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <div class="modal__item__text">
-                                    <h3 class="title"><a href="#">NIKE LUNARCHARGEP</a></h3>
-                                    <p class="sub__title">
-                                        <a href="#">
-                                            Fashion Manufacturer
-                                        </a>
-                                    </p>
-                                    <div class="item__text__price d-flex">
-                                        <p class="title__1">$260.00</p>
-
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between modal__item__cart">
-                                    <div class="item__cart_left">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                        <span>
-                                            Add to cart
-                                        </span>
-                                    </div>
-                                    <div class="item__cart__right">
-                                        <i class="fa-solid fa-receipt"></i>
-                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col modal__category__content">
-                            <div class="modal__category__item">
-                                <div class="modal__item__img">
-                                    <img src="./../asset/img/product_2.jpg" alt="" class="img__block">
-                                </div>
-                                <div class="modal__item__star ">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <div class="modal__item__text">
-                                    <h3 class="title"><a href="#">NIKE AIR ZOOM MARIAH</a></h3>
-                                    <p class="sub__title">
-                                        <a href="#">
-                                            Fashion Manufacturer
-                                        </a>
-                                    </p>
-                                    <div class="item__text__price d-flex">
-                                        <p class="title__1">$206.00</p>
-
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between modal__item__cart">
-                                    <div class="item__cart_left">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                        <span>
-                                            Add to cart
-                                        </span>
-                                    </div>
-                                    <div class="item__cart__right">
-                                        <i class="fa-solid fa-receipt"></i>
-                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col modal__category__content">
-                            <div class="modal__category__item">
-                                <div class="modal__item__img">
-                                    <img src="./../asset/img/product_3.jpg" alt="" class="img__block">
-                                </div>
-                                <div class="modal__item__star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <div class="modal__item__text">
-                                    <h3 class="title"><a href="#">NIKE AIR ZOOM MARIAH</a></h3>
-                                    <p class="sub__title">
-                                        <a href="#">
-                                            Fashion Manufacturer
-                                        </a>
-                                    </p>
-                                    <div class="item__text__price d-flex">
-                                        <p class="title__1">$209.00</p>
-
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between modal__item__cart">
-                                    <div class="item__cart_left">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                        <span>
-                                            Add to cart
-                                        </span>
-                                    </div>
-                                    <div class="item__cart__right">
-                                        <i class="fa-solid fa-receipt"></i>
-                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col modal__category__content">
-                            <div class="modal__category__item">
-                                <div class="modal__item__img">
-                                    <img src="./../asset/img/product_4.jpg" alt="" class="img__block">
-                                </div>
-                                <div class="modal__item__star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <div class="modal__item__text">
-                                    <h3 class="title"><a href="#">Nike Air Max Thea</a></h3>
-                                    <p class="sub__title">
-                                        <a href="#">
-                                            Fashion Manufacturer
-                                        </a>
-                                    </p>
-                                    <div class="item__text__price d-flex">
-                                        <p class="title__1">$250.00</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between modal__item__cart">
-                                    <div class="item__cart_left">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                        <span>
-                                            Add to cart
-                                        </span>
-                                    </div>
-                                    <div class="item__cart__right">
-                                        <i class="fa-solid fa-receipt"></i>
-                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col modal__category__content">
-                            <div class="modal__category__item">
-                                <div class="modal__item__img">
-                                    <img src="./../asset/img/product_5.jpg" alt="" class="img__block">
-                                </div>
-                                <div class="modal__item__star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <div class="modal__item__text">
-                                    <h3 class="title"><a href="#">NIKE REACT HYPERDUNK FLYKNIT</a></h3>
-                                    <p class="sub__title">
-                                        <a href="#">
-                                            Fashion Manufacturer
-                                        </a>
-                                    </p>
-                                    <div class="item__text__price d-flex">
-                                        <p class="title__1">$210.00</p>
-
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between modal__item__cart">
-                                    <div class="item__cart_left">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                        <span>
-                                            Add to cart
-                                        </span>
-                                    </div>
-                                    <div class="item__cart__right">
-                                        <i class="fa-solid fa-receipt"></i>
-                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section> -->
+        
     </main>
     <footer>
         <!-- place footer here -->
         <div class="footer__content">
             <div class="container">
                 <div class="row footer__item">
-                    <div class="col-4 footer__contact">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xs-12 footer__contact">
                         <div class="footer__logo">
                             <img src="../asset/img/logo_footer.png" alt="" class="img__block">
                         </div>
@@ -540,9 +216,9 @@
                             <i style="background-color: #8a7763" class="fa-brands fa-instagram"></i>
                         </div>
                     </div>
-                    <div class="col-8 footer__menu">
+                    <div class="col-4 col-sm-12 col-md-12 col-lg-8 col-xs-12 footer__menu">
                         <div class="row">
-                            <div class="col-2 footer__content__list ">
+                            <div class="col-xs-2 col-sm-6 col-lg-2 footer__content__list ">
                                 <h3 class="title">
                                     PRODUCTS
                                 </h3>
@@ -579,9 +255,9 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-2 footer__content__list">
+                            <div class="col-xs-2 col-sm-6 col-lg-2  footer__content__list">
                                 <h3 class="title">
-                                    OUR COMPANY
+                                   COMPANY
                                 </h3>
                                 <ul class="footer__list">
                                     <li class="footer__list__item">
@@ -616,7 +292,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-3 footer__content__list">
+                            <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 footer__content__list">
                                 <h3 class="title">
                                     YOUR ACCOUNT
                                 </h3>
@@ -648,7 +324,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-5 footer__content__list">
+                            <div class="col-md-5 col-xs-6 col-sm-6 col-lg-5 footer__content__list">
                                 <h3 class="title">
                                     GET IN TOUCH
                                 </h3>
@@ -682,7 +358,7 @@
                         </div>
                         <div class="footer__right">
                             <div class="footer__bottom__img">
-                                <img src="./../asset/img/payment__Footer.png" alt="Payment" class="img__block">
+                                <img src="../asset/img/payment__Footer.png" alt="Payment" class="img__block">
                             </div>
                         </div>
                     </div>
