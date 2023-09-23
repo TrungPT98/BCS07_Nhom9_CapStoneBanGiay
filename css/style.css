@@ -624,6 +624,12 @@ footer .footer__content .footer__bottom .container .footer__bottom__content .foo
 footer .footer__content .footer__bottom .container .footer__bottom__content .footer__left p.title span:hover {
   text-decoration: underline;
 }
+@media screen and (max-width: 720px) {
+  footer .footer__content .footer__bottom .container .footer__bottom__content .footer__right .footer__bottom__img {
+    /* text-align: right; */
+    align-items: end;
+  } 
+}
 
 @media screen and (max-width: 1193px) {
   .navbar__content {
